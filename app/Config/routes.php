@@ -51,7 +51,7 @@ Router::connect('/', array('controller' => 'users', 'action' => 'login'));
 	    array( 'action' => 'edit2', 'method' => 'PUT', 'id' => true ),
 	    array( 'action' => 'delete2', 'method' => 'DELETE', 'id' => true ),
 	) );
-	Router::mapResources(array('personas', 'notes'), array('prefix'=>'api'));
+	Router::mapResources(array('peliculas','personas', 'notes'), array('prefix'=>'api'));
 	Router::parseExtensions();
 	
 	/*Router::connect(
